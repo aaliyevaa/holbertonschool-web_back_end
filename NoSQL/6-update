@@ -1,3 +1,6 @@
 // Adds a new attribute
 
-db.school.update({name: "Holberton school"}, {$set: {address: "972 Mission Street"}})
+db.school.updateMany(
+	{ name: "Holberton school" },
+	{ $set: { address: "972 Mission Street" } } 
+)
