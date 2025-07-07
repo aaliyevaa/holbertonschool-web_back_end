@@ -4,6 +4,7 @@ from pymongo import MongoClient
 
 
 def main():
+    """Main function to run"""
     client = MongoClient()
     collection = client.logs.nginx
     total_logs = collection.count_documents({})
